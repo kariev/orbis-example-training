@@ -24,4 +24,13 @@ git add . -> Trackear los cambios
 git commit -> Guardar los cambios
 git push -> subir los cambios al repositorio remoto github
 
+PARTE 7 
+Construir 
+ -> docker build -t kariev115/orbis-training-docker:2.0.0 .
+Ejecutar
+-> docker run -w /app -v "d:/capacitacion/orbis-example-training":/app kariev115/orbis-training-docker:2.0.0 npm install
+entrar al contenedor
+-> docker run -it -w  /app -v "d:/capacitacion/orbis-example-training":/app kariev115/orbis-training-docker:2.0.0 bash
+
+
 
