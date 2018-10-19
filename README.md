@@ -36,3 +36,10 @@ ejecutar un contenedor mediante el  puerto 35729 a traves del puerto 3030
 docker run -p "35729:3030" -p "3030:3030" -it -w  /app -v "d:/capacitacion/orbis-example-training":/app kariev115/orbis-training-docker:2.0.0 npm star
 t
 
+Cambiar el puerto del servidor, de 3030 al 1042
+docker run -p "1042:3030" -it -w
+-> /app -v "d:/capacitacion/orbis-example-training":/app kariev115/orbis-training-docker:2.0.0 npm start
+ 
+10. Usando la imagen de docker, ejecutar npm run release 
+-> docker run -p "1042:3030" -it -w  /app -v "d:/capacitacion/orbis-example-training":/app kariev115/orbis-training-docker:2.0.0 npm run release
+
